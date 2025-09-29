@@ -4,7 +4,7 @@ const UserCard = ({ user }) => {
   // console.log(user);
   return (
     <>
-      <div className="card bg-base-300 w-96 shadow-2xl">
+      <div className="card bg-base-300 w-96 shadow-2xl m-10">
         <figure>
           <img className=" h-80 w-full" src={user.photoUrl} alt="" />
         </figure>

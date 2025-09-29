@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-300 shadow-sm">
+      <div className="navbar bg-base-300 shadow-sm fixed z-40">
         <div className="flex-1">
           <Link to="/" className="btn btn-ghost text-xl">
             Tinder-Clone
@@ -55,7 +55,10 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a>Settings</a>
+                  <Link to={"/connections"}>Connections</Link>
+                </li>
+                <li>
+                  <Link to={"/requests"}>Requests</Link>
                 </li>
                 <li>
                   <a onClick={handleLogout}>Logout</a>

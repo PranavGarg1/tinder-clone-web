@@ -1,6 +1,7 @@
 import { useState } from "react";
 import UserCard from "./UserCard";
 import { BASE_URL } from "../utils/constants";
+import axios from "axios";
 
 const EditProfile = ({ user }) => {
   // console.log(user);
